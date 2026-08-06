@@ -23,10 +23,13 @@ public class SecondLargestelement {
         }
 
         for(int i = 0; i < n; i++){
-            if(a[i] > s && a[i] != l){
+            if(a[i] > l){
+                s = l;
+                l = a[i];
+            }else if(a[i] > s && a[i] != l){
                 s = a[i];
             }
         }
-        System.out.print(s);
+        System.out.print("second largest number in array: "+ s);
     }
 }

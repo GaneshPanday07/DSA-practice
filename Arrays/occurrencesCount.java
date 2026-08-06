@@ -1,31 +1,30 @@
 import java.util.*;
-public class Linearsearch {
+public class occurrencesCount {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the limit of array: ");
+        System.out.print("Enter array size: ");
         int n = sc.nextInt();
 
         int a[] = new int[n];
 
-        System.out.println("Enter the element of array: ");
+        System.out.println("Enter the elements: ");
         for(int i = 0; i < n; i++){
             a[i] = sc.nextInt();
         }
 
         System.out.print("Enter element to search: ");  
         int x = sc.nextInt();
-        boolean found = false;
+
+        int count = 0;
+
         for(int j = 0; j<n; j++){
             if(a[j] == x){
-                System.out.println("Element found at index: "+j);
-                found = true;
-                break;
+                count++;
             }
         }
 
-        if(!found){
-            System.out.println("Not found element in array.");
-        }
+        System.out.println(x + " occurs " + count + "times");
     }
+
 }
