@@ -14,10 +14,17 @@ public class Reverse {
         }
 
         System.out.println("Reverse array");
-        for(int j=n-1; j >= 0; j--){
+       for(int i = 0; i < n/2; i++){
+            int temp = a[i];
+            a[i]=a[n-1-i];
+            a[n-1-i]=temp;
+       }
 
-            System.out.print(a[j]);
-        }
+       for(int i = 0; i < n; i++){
+        System.out.print(a[i]+" "); 
+       }
+
+       sc.close();
     }
 }
 
