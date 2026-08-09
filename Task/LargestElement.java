@@ -16,8 +16,8 @@ public class LargestElement {
 
         int large = a[0];
         for(int i = 0; i<n-1; i++){
-            if(a[i] < a[i+1]){
-                large = a[i+1];
+            if(a[i] > large){
+                large = a[i];
             }
         }
 
