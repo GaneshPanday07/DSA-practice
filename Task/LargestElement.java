@@ -23,5 +23,6 @@ public class LargestElement {
 
         System.out.print("Largest Element in array = "+ large);
         
+        sc.close();
     }
 }
