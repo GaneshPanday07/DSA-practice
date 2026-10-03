@@ -15,14 +15,12 @@ public class Sum {
         }
         System.out.println(sum);
 
-
         //Find the sum of even numbers from 1 to N
         sum = 0;
         for (int i = 1; i <= n; i++) {
             if(i%2 == 0){ sum += i; }
         }
         System.out.println(sum);
-
 
         //Find the sum of odd numbers from 1 to N
         sum = 0;
